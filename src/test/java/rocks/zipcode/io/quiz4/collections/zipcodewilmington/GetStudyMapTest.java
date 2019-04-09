@@ -142,7 +142,12 @@ public class GetStudyMapTest {
         Double actualStudyTime2 = secondEntry.getValue();
         Double actualStudyTime3 = thirdEntry.getValue();
 
-
+        System.out.println(expectedStudent1);
+        System.out.println(actualStudent1);
+        System.out.println(expectedStudent2);
+        System.out.println(actualStudent2);
+        System.out.println(expectedStudent3);
+        System.out.println(actualStudent3);
 
         // then
         Assert.assertEquals(expectedStudent1, actualStudent1);
