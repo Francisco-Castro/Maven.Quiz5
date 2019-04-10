@@ -19,10 +19,10 @@ public class NestedSetCompareMultipleElementNeutral {
         ComparableTreeSet<String> set4 = new ComparableTreeSet<>("Wilhem", "Alcivar");
         ComparableTreeSet<ComparableTreeSet<String>> powerset2 = new ComparableTreeSet<>(set3, set4);
 
-        // when
+//         when
         Integer actual = powerset1.compareTo(powerset2);
 
-        // then
+//         then
         Assert.assertTrue(actual == 0);
     }
 

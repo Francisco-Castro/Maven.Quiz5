@@ -2,12 +2,13 @@ package rocks.zipcode.io.quiz4.generics;
 
 import java.util.ArrayList;
 import java.util.EmptyStackException;
+import java.util.Iterator;
 import java.util.List;
 
 /**
  * @author leon on 11/12/2018.
  */
-public class MyStack<SomeType> {
+public class MyStack<SomeType> implements Iterable<SomeType>{
 
     private List<SomeType> list;
     private static Integer counter;
@@ -48,4 +49,8 @@ public class MyStack<SomeType> {
 
     }
 
+    @Override
+    public Iterator<SomeType> iterator() {
+            return list.iterator();
+    }
 }
